@@ -1,8 +1,9 @@
-document.querySelector("#items")
-.addEventListener("wheel" , event => {
-    if(event.deltaY > 0) {
-        event.target.scrollBy(300, 0)
-    } else {
-        event.target.scrollBy(-300, 0)
-    }
-})
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+
+}
