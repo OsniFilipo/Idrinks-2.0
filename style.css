@@ -28,7 +28,7 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
- 
+
 }
 
 header {
@@ -44,13 +44,12 @@ header {
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
-    
 
 }
 
 header.logo {
 
-    height: 72px;
+    height: 32rem;
 
 }
 
@@ -76,7 +75,8 @@ header .icons a {
 
     cursor: pointer;
     margin-left: .5rem;
-    line-height: 4.5;
+    height: 4.5rem;
+    line-height: 4.5rem;
     width: 4.5rem;
     text-align: center;
     font-size: 1.7rem;
@@ -89,8 +89,8 @@ header .icons a {
 header .icons i:hover,
 header .icons a:hover{
 
-    colar :#fff;
-    background: rgba(80, 255, 203, 1);
+    color: #fff ;
+    background: var(--texto);
     transform: rotate(360deg);
 
 }
