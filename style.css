@@ -1,5 +1,7 @@
+/* link da fonte */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
+/* palavra chave para colocar a cor patão */
 :root {
 
     --texto : rgba(41, 69, 128, 1);
@@ -8,6 +10,7 @@
 
 }
 
+/* Parte que deixa o intence minimisado */
 *{
 
     font-family: 'Nunito', sans-serif;
@@ -108,7 +111,7 @@ header .icons #menu-bars{
     html {
 
         font-size: 55%;
-     
+
     }
 
     header {
@@ -124,7 +127,7 @@ header .icons #menu-bars{
     header .icons #menu-bars{
 
         display: inline-block;
-    
+
     }
 
     header .navbar{
@@ -164,7 +167,7 @@ header .icons #menu-bars{
     html {
 
         font-size: 50%;
-     
+
     }
 
 }
