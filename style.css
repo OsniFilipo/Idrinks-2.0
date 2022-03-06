@@ -68,7 +68,7 @@ header .navbar a{
 header .navbar a.active,
 header .navbar a:hover {
 
-    color: #fff;
+    color: #D0DEFE;
     background: var(--texto);
 
 }
@@ -85,14 +85,14 @@ header .icons a {
     font-size: 1.7rem;
     color: var(--texto);
     border-radius: 50%;
-    background: #eee;
+    background: #D0DEFE;
 
 }
 
 header .icons i:hover,
 header .icons a:hover{
 
-    color: #fff ;
+    color: #D0DEFE ;
     background: var(--texto);
     transform: rotate(360deg);
 
@@ -136,7 +136,7 @@ header .icons #menu-bars{
         top: 100%;
         left: 0;
         right: 0;
-        background: #fff;
+        background: #D0DEFE;
         border-top: .1rem solid rgba(0, 0, 0, .2);
         border-bottom: .1rem solid rgba(0, 0, 0, .2);
         padding: 1rem;
@@ -146,7 +146,7 @@ header .icons #menu-bars{
 
     header .navbar .active{
 
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
     }
 
@@ -166,7 +166,7 @@ header .icons #menu-bars{
 
     html {
 
-        font-size: 50%;
+        font-size: 55%;
 
     }
 
