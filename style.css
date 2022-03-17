@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-/* palavra chave para colocar a cor patão */
-:root{
+/* palavra chave para colocar a cor padão */
 
-    --texto: rgba(41, 69, 128, 1);
-    --azul: rgba(28, 98, 255, 1);
-    --box-shadow: 0 .4rem .4rem rgba(0, 0, 0, .1);
+    :root{
 
-}
+        --texto: rgba(41, 69, 128, 1);
+        --azul: rgba(28, 98, 255, 1);
+        --box-shadow: 0 .4rem .4rem rgba(0, 0, 0, .1);
 
-/* Parte que deixa o intence minimisado */
-*{
+    }
 
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
+/* Parte padronizar do site */
 
-}
+    *{
+
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+
+    }
+
+/* Padrão do lated */
 
 html{
 
@@ -32,6 +36,8 @@ html{
     scroll-behavior: smooth;
 
 }
+
+/* Barra de Menu */
 
 header{
 
@@ -46,13 +52,18 @@ header{
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
+
 }
+
+/* Tamanho do logo */
 
 header .logo{
 
     font-size: 2.5rem;
 
 }
+
+/* cor e espaçamento do texto */
 
 header .navbar a{
 
@@ -63,6 +74,8 @@ header .navbar a{
 
 }
 
+/* Perta o batão muda de cor */
+
 header .navbar a.active,
 header .navbar a:hover{
 
@@ -70,6 +83,8 @@ header .navbar a:hover{
     background: var(--texto);
 
 }
+
+/* A parte do icone dos lado */
 
 header .icons i,
 header .icons a {
@@ -87,12 +102,15 @@ header .icons a {
 
 }
 
+/* Parte que deixa o intence minimisado */
+
 header .icons i:hover,
 header .icons a:hover{
 
     color:#D0DEFE;
     background: var(--texto);
     transform: rotate(360deg);
+
 }
 
 header .icons #menu-bars{
@@ -145,6 +163,7 @@ header .icons #menu-bars{
 #search-form #search-box::-webkit-search-cancel-button{
 
     -webkit-appearance: none;
+
 }
 
 #search-form label{
@@ -152,6 +171,7 @@ header .icons #menu-bars{
     color: #D0DEFE;
     cursor: pointer;
     font-size: 3rem;
+
 }
 
 #search-form label:hover{
