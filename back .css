@@ -1,0 +1,184 @@
+/* link da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+/* palavra chave para colocar a cor patão */
+:root {
+
+    --texto: rgba(41, 69, 128, 1);
+    --azul: rgba(28, 98, 255, 1);
+    --box-shadow: 0 .4rem .4rem rgba(0, 0, 0, .1);
+
+}
+
+/* Parte que deixa o intence minimisado */
+*{
+
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+html {
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+
+}
+
+header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #1C62FF 0%, #417BFF 100%);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+
+}
+
+header.logo {
+
+    height: 32rem;
+
+}
+
+header .navbar a{
+
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--texto);
+
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+
+    color: #D0DEFE;
+    background: var(--texto);
+
+}
+
+header .icons i,
+header .icons a {
+
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var (--texto);
+    border-radius: 50%;
+    background: #D0DEFE;
+
+}
+
+header .icons i:hover,
+header .icons a:hover{
+
+    color: #D0DEFE ;
+    background: var(--texto);
+    transform: rotate(360deg);
+
+}
+
+header .icons #menu-bars{
+
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Parte que deixa o intence minimisado */
+
+@media (max-width:991px){
+
+    html {
+
+        font-size: 55%;
+
+    }
+
+    header {
+
+        padding: 1rem 2rem;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    header .icons #menu-bars{
+
+        display: inline-block;
+
+    }
+
+    header .navbar{
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #D0DEFE;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+    header .navbar .active{
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    }
+
+    header .navbar a{
+
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+
+    }
+
+}
+
+@media (max-width:991px){
+
+    html {
+
+        font-size: 55%;
+
+    }
+
+}
